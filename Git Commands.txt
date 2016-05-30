@@ -23,7 +23,7 @@ git fetch origin
 
 git merge origin
 
-git pull origin develop
+git pull origin master
 
 git log
 
@@ -45,22 +45,22 @@ git reset HEAD~2 (back to previous commits)
 
 git reset --hard e2371ba
 
-git diff resumebranch origin/resumebranch
+git diff master origin/master
 
 
 
 Steps to update the local from remote origin
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-git fetch origin resumebranch
+git fetch origin master
 
-git diff origin/resumebranch resumebranch
+git diff origin/master master
 
-git merge origin/resumebranch
+git merge origin/master
 
 (or)
 
-git pull origin resumebranch
+git pull origin master
 
 
 Steps to update the remote origin from local
@@ -72,6 +72,6 @@ git add test.txt
 
 git commit -m "Added test.txt file"
 
-git diff origin/resumebranch resumebranch
+git diff origin/master master
 
-git push origin resumebranch
+git push origin master
