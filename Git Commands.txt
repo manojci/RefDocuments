@@ -13,8 +13,8 @@ git commit -m "Added test.txt file"
 git push origin master
 
 git branch
-git branch -a 				(List branches and and also current branch)
-git branch develop 			(only create the branch with all files of current branch and it won't checkout by own)
+git branch -a 			(List branches and and also current branch)
+git branch develop 		(only create the branch with all files of current branch and it won't checkout by own)
 git push origin develop 	(push new branch to origin)
 git branch -d develop 		(deletes the branch if it is up todate with central repo)
 git branch -D develop 		(hard delete the branch)
@@ -52,7 +52,7 @@ git diff resumebranch origin/resumebranch
 Steps to update the local from remote origin
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-git fetch origin
+git fetch origin resumebranch
 
 git diff origin/resumebranch resumebranch
 
@@ -75,5 +75,3 @@ git commit -m "Added test.txt file"
 git diff origin/resumebranch resumebranch
 
 git push origin resumebranch
-
-
