@@ -40,7 +40,6 @@ git remote add upstream https://github.com/manojci/hello-world.git
 
 git remote rm upstream
 
-
 git reset HEAD~2 (back to previous commits)
 
 git reset --hard e2371ba
