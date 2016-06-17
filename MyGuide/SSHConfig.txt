@@ -1,0 +1,14 @@
+Steps for creating shh key and adding to github account
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ssh-keygen -t rsa -b 4096 -C "christo1424@gmail.com"
+
+press enter or give file name to save ur key
+
+enter passphrase or press enter
+
+eval "$(ssh-agent -s)"  --> start ssh agent
+
+ssh-add ~/.ssh/id_rsa   --> add key to ssh agent
+
+ssh -T git@github.com    --> test for permission after adding the key in github account
